@@ -131,7 +131,9 @@ svg .axis{stroke:var(--line)}
 .card p{margin:0 0 8px;font-size:.92rem;color:var(--muted)}
 
 /* paintings */
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;align-items:start}
+.gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;align-items:start}
+.gallery img{grid-column:span 2}
+.gallery img.wide{grid-column:span 3}
 .gallery img{width:100%;height:auto;border-radius:6px;display:block}
 
 footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
@@ -148,6 +150,7 @@ footer .mail{font-family:var(--mono);user-select:all}
   .pub{grid-template-columns:1fr;gap:10px}
   .thumb{width:100%;aspect-ratio:16/7}
   .gallery{grid-template-columns:repeat(2,1fr)}
+  .gallery img,.gallery img.wide{grid-column:span 1}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -434,10 +437,13 @@ footer .mail{font-family:var(--mono);user-select:all}
   <h2>Paintings</h2>
   <p style="margin:-6px 0 14px;color:var(--muted);font-size:.92rem">In my spare time I paint.</p>
   <div class="gallery" id="gallery">
-    <img src="images/166.png" alt="Painting" loading="lazy"><img src="images/Abu2.png" alt="Painting" loading="lazy">
-    <img src="images/88.png" alt="Painting" loading="lazy"><img src="images/Abu.png" alt="Painting" loading="lazy">
-    <img src="images/177.png" alt="Painting" loading="lazy"><img src="images/P2.png" alt="Painting" loading="lazy">
-    <img src="images/13.png" alt="Painting" loading="lazy"><img src="images/133.png" alt="Painting" loading="lazy">
+    <img src="images/166.png" class="wide" alt="Painting" loading="lazy"><img src="images/P2.png" class="wide" alt="Painting" loading="lazy">
+    <img src="images/Abu2.png" alt="Painting" loading="lazy">
+    <img src="images/88.png" alt="Painting" loading="lazy">
+    <img src="images/Abu.png" alt="Painting" loading="lazy">
+    <img src="images/177.png" alt="Painting" loading="lazy">
+    <img src="images/13.png" alt="Painting" loading="lazy">
+    <img src="images/133.png" alt="Painting" loading="lazy">
   </div>
 </section>
 
