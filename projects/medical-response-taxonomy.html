@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Beyond Factual vs. Hallucinatory</title>
+<meta name="description" content="Replaces the true/false view of medical LLM answers with three tiers that account for evolving and predictive knowledge.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="project.css">
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="../index.html#projects">← Saleh Afroogh · Featured Projects</a>
+<div class="eyebrow">ICLR 2025 Workshop · MLGenX</div>
+<h1>Beyond Factual vs. Hallucinatory</h1>
+<p class="sub">A refined taxonomy for categorizing LLM medical responses</p>
+<div class="authors"><u>Saleh Afroogh</u>, Yasser Pouresmaeil, Junfeng Jiao</div>
+<div class="btns"><a href="https://openreview.net/forum?id=B4KMAqeTfv" target="_blank" rel="noopener">Paper</a><a href="https://openreview.net/pdf?id=B4KMAqeTfv" target="_blank" rel="noopener">PDF</a></div>
+<div class="stats"><div class="stat"><b>3</b><span>response tiers</span></div><div class="stat"><b>2</b><span>evaluation axes</span></div><div class="stat"><b>4</b><span>graded labels for tiers 1 and 2</span></div><div class="stat"><b>2</b><span>parts of a prediction judged separately</span></div></div>
+<h2>Overview</h2>
+<p>LLMs are increasingly used to answer medical questions, and their answers are usually judged as either <b>factual</b> or <b>hallucinatory</b>. That binary assumes every answer can be checked at the moment it is generated. Medical knowledge does not work that way: findings move from hypothesis to consensus, trials are still running, and prognoses can only be judged in hindsight. This paper critiques the binary and proposes a <b>three-tier taxonomy</b> built on two ideas: a <b>veridicality gradient</b> for knowledge that is still provisional, and <b>temporal verifiability</b>, whether a claim can be checked now or only later.</p>
+<h2>Highlights</h2>
+<ul><li>A binary label treats evidence-consistent speculation the same as a fabrication, which penalizes legitimate scientific uncertainty.</li><li><b>Provisional</b> answers are graded against current consensus (accurate vs. inaccurate) instead of being forced into true or false.</li><li><b>Predictive</b> answers are split into content, judged later, and method, judged now if the reasoning is explainable.</li><li>Models should state the temporal validity of their answers and attach uncertainty labels, so clinicians do not read predictions as settled advice.</li></ul>
+<h2>Framework</h2>
+<figure><div class="frame img"><img src="../images/projects/med-fig1.jpg" alt="Fig. 1: classification of LLM-generated medical responses into currently verifiable, provisionally examinable and predictive responses, with their sub-labels." loading="lazy"></div><figcaption>Fig. 1: classification of LLM-generated medical responses into currently verifiable, provisionally examinable and predictive responses, with their sub-labels.</figcaption></figure><figure><div class="frame img"><img src="../images/projects/med-fig2.jpg" alt="Fig. 2: temporal verifiability and epistemic uncertainty. Each kind of knowledge is assessed now or deferred until new evidence arrives." loading="lazy"></div><figcaption>Fig. 2: temporal verifiability and epistemic uncertainty. Each kind of knowledge is assessed now or deferred until new evidence arrives.</figcaption></figure><figure><div class="frame img"><img src="../images/projects/med-fig3.jpg" alt="Fig. 3: a time-sensitive evaluation framework for LLMs in healthcare, from past medical knowledge to future confidence metrics." loading="lazy"></div><figcaption>Fig. 3: a time-sensitive evaluation framework for LLMs in healthcare, from past medical knowledge to future confidence metrics.</figcaption></figure><figure><div class="frame"><div class="tiers">
+ <div class="tier t0"><div class="tn">Tier 1</div><h3>Currently verifiable</h3><p>Settled knowledge that can be checked now with high confidence. Each response is either <b>factual</b> or <b>hallucinatory</b>.</p><div class="ex">e.g. standard dosage of a commonly prescribed drug</div></div>
+ <div class="tier t1"><div class="tn">Tier 2</div><h3>Provisionally examinable</h3><p>Claims resting on evolving evidence that later research may confirm or overturn. Graded as <b>provisional-accurate</b> or <b>provisional-inaccurate</b> against current consensus.</p><div class="ex">e.g. early links between gut microbiota and mental health</div></div>
+ <div class="tier t2"><div class="tn">Tier 3</div><h3>Predictive</h3><p>Forward-looking, probabilistic statements. The <b>content</b> can only be judged once the outcome is known; the <b>method</b> can be judged now if it is explainable.</p><div class="ex">e.g. expected remission rate for a cancer therapy</div></div>
+</div></div><figcaption>Summary of the three tiers with medical examples from the paper.</figcaption></figure>
+<h2>How it works</h2>
+<ul><li>Separate settled facts from provisional and predictive claims before scoring a medical answer.</li><li>Re-certify provisional claims as new evidence appears, and distinguish outdated answers from true hallucinations.</li><li>Use real-time knowledge retrieval to keep answers aligned with current consensus.</li><li>Track how provisional knowledge becomes established to recalibrate models over time.</li></ul>
+<h2>Resources</h2>
+<div class="res"><a href="https://openreview.net/forum?id=B4KMAqeTfv" target="_blank" rel="noopener">Paper (OpenReview)<span>Paper ↗</span></a><a href="https://openreview.net/pdf?id=B4KMAqeTfv" target="_blank" rel="noopener">PDF<span>Paper ↗</span></a></div>
+<h2>Citation</h2><p class="cite">Afroogh, S., Pouresmaeil, Y., &amp; Jiao, J. (2025). Beyond the factual vs. hallucinatory dichotomy: A refined taxonomy for LLM medical response categorization. <i>ICLR 2025 Workshop on Machine Learning for Genomics Explorations</i>.</p>
+<footer><a href="../index.html">← Back to main page</a><span>© 2026 Saleh Afroogh</span></footer>
+</div>
+</body>
+</html>

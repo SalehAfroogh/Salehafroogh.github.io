@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Safe-Child-LLM</title>
+<meta name="description" content="200 adversarial prompts for children (7–12) and teens (13–17), scored on a 0–5 refusal scale across eight leading LLMs.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="project.css">
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="../index.html#projects">← Saleh Afroogh · Featured Projects</a>
+<div class="eyebrow">arXiv preprint · 2025</div>
+<h1>Safe-Child-LLM</h1>
+<p class="sub">A developmental benchmark for evaluating LLM safety in child–LLM interactions</p>
+<div class="authors">Junfeng Jiao, <u>Saleh Afroogh</u>, Kevin Chen, Abhejay Murali, David Atkinson, Amit Dhurandhar</div>
+<div class="btns"><a href="https://arxiv.org/abs/2506.13510" target="_blank" rel="noopener">Paper</a><a href="https://github.com/The-Responsible-AI-Initiative/Safe_Child_LLM_Evaluation" target="_blank" rel="noopener">Code</a><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MRZGNB" target="_blank" rel="noopener">Data</a></div>
+<div class="stats"><div class="stat"><b>200</b><span>adversarial prompts</span></div><div class="stat"><b>2</b><span>age groups: 7–12 and 13–17</span></div><div class="stat"><b>8</b><span>LLMs evaluated</span></div><div class="stat"><b>95% → 72%</b><span>best vs. worst safe-response rate</span></div></div>
+<h2>Overview</h2>
+<p>LLMs increasingly power apps used by children and adolescents, yet safety evaluations focus almost entirely on adults. <b>Safe-Child-LLM</b> is a benchmark and dataset for assessing LLM safety across two developmental stages, <b>children (7–12)</b> and <b>adolescents (13–17)</b>. It contains <b>200 adversarial prompts</b> curated from red-teaming corpora such as SG-Bench and HarmBench, with human-annotated labels for jailbreak success and a standardized <b>0–5 ethical refusal scale</b>. Evaluating eight leading LLMs reveals critical safety gaps in child-facing scenarios. The dataset and evaluation code are public.</p>
+<h2>Highlights</h2>
+<ul><li>Claude 3.7 Sonnet (~95%) and GPT-4o (~94.5%) give the highest share of safe responses across five evaluation rounds.</li><li>Open models Vicuna-7B (74.2%) and Mistral-7B (71.5%) are the most vulnerable to child-directed harmful prompts.</li><li>The 0–5 scale distinguishes a firm, age-appropriate refusal from evasion, partial compliance and active escalation.</li><li>The children’s set emphasizes illegal activities, stereotypes and toxic language; the teen set emphasizes mental-health crises, sexual content, hate speech and treating the chatbot as a human (Table 1).</li></ul>
+<h2>Results</h2>
+<figure><div class="frame img"><img src="../images/projects/safechild-fig1.jpg" alt="Fig. 1: share of safe responses across five evaluation rounds for each model." loading="lazy"></div><figcaption>Fig. 1: share of safe responses across five evaluation rounds for each model.</figcaption></figure><figure><div class="frame img"><img src="../images/projects/safechild-fig2.jpg" alt="Fig. 2: distribution of action labels for the two age groups." loading="lazy"></div><figcaption>Fig. 2: distribution of action labels for the two age groups.</figcaption></figure><figure><div class="frame img"><img src="../images/projects/safechild-table1.jpg" alt="Table 1: prompt categories by age group (100 prompts each)." loading="lazy"></div><figcaption>Table 1: prompt categories by age group (100 prompts each).</figcaption></figure><figure><div class="frame img"><img src="../images/projects/safechild-table2.jpg" alt="Table 2: the 0–5 action-label taxonomy, with example questions and responses." loading="lazy"></div><figcaption>Table 2: the 0–5 action-label taxonomy, with example questions and responses.</figcaption></figure><figure><div class="frame img"><img src="../images/projects/safechild-fig3.jpg" alt="Fig. 3: harmful-response detection results for the younger age group." loading="lazy"></div><figcaption>Fig. 3: harmful-response detection results for the younger age group.</figcaption></figure><figure><div class="frame img"><img src="../images/projects/safechild-fig4.jpg" alt="Fig. 4: harmful-response detection results for ages 13–17." loading="lazy"></div><figcaption>Fig. 4: harmful-response detection results for ages 13–17.</figcaption></figure><figure><div class="frame img"><img src="../images/projects/safechild-fig5.jpg" alt="Fig. 5: action-label classification results for ages 13–17." loading="lazy"></div><figcaption>Fig. 5: action-label classification results for ages 13–17.</figcaption></figure>
+<h2>How it works</h2>
+<ul><li><code>analysis/analyze.py</code> generates raw responses for every model.</li><li><code>category_acc.py</code> and <code>level_acc.py</code> compute refusal and violation metrics.</li><li><code>cronbach_alpha.py</code> estimates behavioural consistency.</li></ul>
+<h2>Resources</h2>
+<div class="res"><a href="https://arxiv.org/abs/2506.13510" target="_blank" rel="noopener">Paper (arXiv)<span>arXiv ↗</span></a><a href="https://github.com/The-Responsible-AI-Initiative/Safe_Child_LLM_Evaluation" target="_blank" rel="noopener">Code<span>GitHub ↗</span></a><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MRZGNB" target="_blank" rel="noopener">ChildSafeLLM dataset<span>Dataverse ↗</span></a></div>
+<h2>Citation</h2><p class="cite">Jiao, J., Afroogh, S., Chen, K., Murali, A., Atkinson, D., &amp; Dhurandhar, A. (2025). Safe-Child-LLM: A developmental benchmark for evaluating LLM safety in child-LLM interactions. <i>arXiv preprint arXiv:2506.13510</i>.</p>
+<footer><a href="../index.html">← Back to main page</a><span>© 2026 Saleh Afroogh</span></footer>
+</div>
+</body>
+</html>
