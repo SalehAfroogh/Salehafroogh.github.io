@@ -76,11 +76,14 @@ figure .frame .chart{min-width:520px}
 figure .frame.img{padding:8px;background:#fff}
 figure img{width:100%;display:block;border-radius:4px}
 figcaption{font-size:.85rem;color:var(--muted);margin-top:8px}
-code{font-family:var(--mono);font-size:.84em;background:var(--soft);padding:1px 5px;border-radius:4px}
+code{overflow-wrap:anywhere;font-family:var(--mono);font-size:.84em;background:var(--soft);padding:1px 5px;border-radius:4px}
 .res{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
 .res a{border:1px solid var(--line);border-radius:8px;padding:10px 14px;color:var(--fg);display:flex;justify-content:space-between;gap:10px}
 .res a:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
-.res a span{font-family:var(--mono);font-size:.75rem;color:var(--muted)}
+.res a span{font-family:var(--mono);font-size:.75rem;color:var(--muted);flex:none}
+.res a{min-width:0;overflow-wrap:anywhere}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (max-width:640px){figure .frame{padding:10px}.tbl table{min-width:0;font-size:.74rem}.tbl th,.tbl td{padding-left:4px!important;padding-right:4px!important}}
 .cite{font-size:.88rem;background:var(--soft);border-radius:8px;padding:14px 16px;margin:0;text-align:left}
 footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 @media (max-width:640px){h1{font-size:1.9rem}.stats{grid-template-columns:repeat(2,1fr)}}
