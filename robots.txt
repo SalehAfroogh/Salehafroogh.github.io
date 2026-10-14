@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://salehafroogh.github.io/sitemap.xml
