@@ -14,7 +14,7 @@
   --bg:#12161d; --fg:#e4e8ee; --muted:#98a1b0; --line:#262d38; --soft:#1a2029;
   --accent:#5cc4b6; --accent-soft:#183331; --gh:#f0f3f6; --c0:#5cc4b6; --c1:#e3a24f; --c2:#8ea2e6; --c3:#e58397; --c4:#a6c76f; --c0:#5cc4b6; --c1:#e3a24f; --c2:#8ea2e6; --c3:#e58397; --c4:#a6c76f; color-scheme:dark}
 *{box-sizing:border-box}
-html{font-size:17.5px}
+html{font-size:19.25px}
 body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1rem;line-height:1.6;margin:0}
 .wrap{max-width:860px;margin:0 auto;padding-inline:20px;padding-block:32px 64px}
 a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
