@@ -30,7 +30,7 @@
 /* Layout: single centered column (~760px). Header = photo + bio side by side, then dated sections in a two-column grid (date gutter | content). */
 :root{
   --bg:#ffffff; --fg:#1b2230; --muted:#5d6676; --line:#e3e6ec; --soft:#f4f6f9;
-  --accent:#0f6b63; --accent-soft:#e3f1ef; --gh:#181717; --text-bg:#eef4f6; --hero-bg:#e6f2ee;
+  --accent:#1f5fae; --accent-soft:#e4edf9; --gh:#181717; --text-bg:#eef2f8; --hero-bg:#e7eef8;
   --c0:#0f6b63; --c1:#c27b1e; --c2:#4a5fa8; --c3:#b4475a; --c4:#6b8f3a;
   --display:"Literata",Georgia,"Times New Roman",serif;
   --body:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,sans-serif;
@@ -38,10 +38,10 @@
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#12161d; --fg:#e4e8ee; --muted:#98a1b0; --line:#262d38; --soft:#1a2029;
-  --accent:#5cc4b6; --accent-soft:#183331; --gh:#f0f3f6; --text-bg:#1a222b; --hero-bg:#16211f; --c0:#5cc4b6; --c1:#e3a24f; --c2:#8ea2e6; --c3:#e58397; --c4:#a6c76f; color-scheme:dark}}
+  --accent:#82b1f5; --accent-soft:#18263b; --gh:#f0f3f6; --text-bg:#18202c; --hero-bg:#121c2b; --c0:#5cc4b6; --c1:#e3a24f; --c2:#8ea2e6; --c3:#e58397; --c4:#a6c76f; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#12161d; --fg:#e4e8ee; --muted:#98a1b0; --line:#262d38; --soft:#1a2029;
-  --accent:#5cc4b6; --accent-soft:#183331; --gh:#f0f3f6; --text-bg:#1a222b; --hero-bg:#16211f; --c0:#5cc4b6; --c1:#e3a24f; --c2:#8ea2e6; --c3:#e58397; --c4:#a6c76f; color-scheme:dark}
+  --accent:#82b1f5; --accent-soft:#18263b; --gh:#f0f3f6; --text-bg:#18202c; --hero-bg:#121c2b; --c0:#5cc4b6; --c1:#e3a24f; --c2:#8ea2e6; --c3:#e58397; --c4:#a6c76f; color-scheme:dark}
 
 *{box-sizing:border-box}
 html{font-size:23.1px}
@@ -74,7 +74,7 @@ header + section{margin-top:84px}
 #publications .pub{border-top:0;padding:10px 0}
 #publications .pub > div:last-child{background:var(--bg);box-shadow:0 1px 3px rgba(0,0,0,.06)}
 .collab{background:var(--bg)!important}
-header{--bg:#16263b;--fg:#eef1f5;--muted:#a7b2c3;--line:#2a3b54;--soft:#1a2c44;--accent:#6fd3c4;--accent-soft:#1a3532;--gh:#f0f3f6;color:var(--fg)}
+header{--bg:#16263b;--fg:#eef1f5;--muted:#a7b2c3;--line:#2a3b54;--soft:#1a2c44;--accent:#8cc0ff;--accent-soft:#1d3352;--gh:#f0f3f6;color:var(--fg)}
 header::before{background:#0f1c2e!important;border-bottom-color:#0f1c2e!important}
 
 .links a{background:var(--bg)}
