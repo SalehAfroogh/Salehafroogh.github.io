@@ -63,6 +63,11 @@ header{display:grid;grid-template-columns:250px 1fr;gap:40px;align-items:start;p
 header::before{content:"";position:absolute;z-index:-1;top:-28px;bottom:-40px;left:50%;width:100vw;transform:translateX(-50%);background:var(--hero-bg);border-bottom:1px solid color-mix(in srgb,var(--accent) 16%,var(--line))}
 body{overflow-x:hidden;overflow-x:clip}
 header + section{margin-top:84px}
+.plinks .cite{font:inherit;font-family:var(--mono);background:none;border:0;padding:0;color:var(--accent);cursor:pointer}
+.plinks .cite:hover{text-decoration:underline}
+.plinks .cite.ok{color:var(--muted)}
+.bib{margin:10px 0 0;padding:10px 12px;background:var(--soft);border:1px solid var(--line);border-radius:8px;font-family:var(--mono);font-size:.66rem;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--fg);max-height:16em;overflow:auto}
+
 #publications{position:relative;isolation:isolate;padding-block:44px 48px;margin-top:64px}
 #publications::before{content:"";position:absolute;z-index:-1;inset:0 auto;left:50%;width:100vw;transform:translateX(-50%);background:var(--hero-bg);border-block:1px solid color-mix(in srgb,var(--accent) 16%,var(--line))}
 #publications + section{margin-top:64px}
@@ -268,7 +273,7 @@ section,header{scroll-margin-top:76px}
     </nav>
     <div class="edu exp">
       <div class="k">Experience</div>
-      <div class="e"><b>AI Research Scientist · RPC</b><span>The University of Texas at Austin · 2023–present</span></div>
+      <div class="e"><b>AI Research Staff · RPC</b><span>The University of Texas at Austin · 2023–present</span></div>
       <div class="e"><b>Co-PI · AI Project Lead</b><span>SUNY–IBM AI Research Alliance · 2021–2023</span></div>
       <div class="e"><b>Research Fellow · Project Lead</b><span>UrbanResilience.AI Lab, Texas A&amp;M · 2019–2021</span></div>
     </div>
@@ -454,7 +459,17 @@ section,header{scroll-margin-top:76px}
     <div>
       <div class="title">Global landscape of academic guidelines for generative AI and large language models</div>
       <div class="venue">Nature Human Behaviour, 2025 <span class="badge">Nature</span></div>
-      <div class="plinks"><a href="https://www.nature.com/articles/s41562-025-02124-6" target="_blank" rel="noopener">paper</a><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/XZZHA5" target="_blank" rel="noopener">dataset</a></div>
+      <div class="plinks"><a href="https://www.nature.com/articles/s41562-025-02124-6" target="_blank" rel="noopener">paper</a><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/XZZHA5" target="_blank" rel="noopener">dataset</a><button class="cite" type="button" aria-expanded="false" title="Copy BibTeX">cite</button></div>
+      <pre class="bib" hidden>@article{jiao2025global,
+  title     = {The global landscape of academic guidelines for generative {AI} and large language models},
+  author    = {Jiao, Junfeng and Afroogh, Saleh and Chen, Kevin and Atkinson, David and Dhurandhar, Amit},
+  journal   = {Nature Human Behaviour},
+  volume    = {9},
+  number    = {4},
+  pages     = {638--642},
+  year      = {2025},
+  doi       = {10.1038/s41562-025-02124-6}
+}</pre>
     </div>
   </div>
 
@@ -464,7 +479,16 @@ section,header{scroll-margin-top:76px}
       <div class="title">Trust in AI: Progress, Challenges, and Future Directions</div>
       <div class="auth"><u>S. Afroogh</u>, A. Akbari, E. Malone, M. Kargar, H. Alambeigi</div>
       <div class="venue">Humanities and Social Sciences Communications, 2024 <span class="badge">Nature</span></div>
-      <div class="plinks"><a href="https://rdcu.be/d0Dr8" target="_blank" rel="noopener">paper</a></div>
+      <div class="plinks"><a href="https://rdcu.be/d0Dr8" target="_blank" rel="noopener">paper</a><button class="cite" type="button" aria-expanded="false" title="Copy BibTeX">cite</button></div>
+      <pre class="bib" hidden>@article{afroogh2024trust,
+  title     = {Trust in {AI}: progress, challenges, and future directions},
+  author    = {Afroogh, Saleh and Akbari, Ali and Malone, Emmie and Kargar, Mohammadali and Alambeigi, Hananeh},
+  journal   = {Humanities and Social Sciences Communications},
+  volume    = {11},
+  number    = {1},
+  year      = {2024},
+  doi       = {10.1057/s41599-024-04044-8}
+}</pre>
     </div>
   </div>
 
@@ -474,7 +498,17 @@ section,header{scroll-margin-top:76px}
       <div class="title">Embedded Ethics for Responsible Artificial Intelligence Systems (EE-RAIS) in disaster management: a conceptual model and its deployment</div>
       <div class="auth"><u>S. Afroogh</u>, A. Mostafavi, A. Akbari, Y. Pouresmaeil, S. Goudarzi, F. Hajhosseini, K. Rasoulkhani</div>
       <div class="venue">AI and Ethics, 2023</div>
-      <div class="plinks"><a href="https://link.springer.com/article/10.1007/s43681-023-00309-1" target="_blank" rel="noopener">paper</a></div>
+      <div class="plinks"><a href="https://link.springer.com/article/10.1007/s43681-023-00309-1" target="_blank" rel="noopener">paper</a><button class="cite" type="button" aria-expanded="false" title="Copy BibTeX">cite</button></div>
+      <pre class="bib" hidden>@article{afroogh2024embedded,
+  title     = {Embedded ethics for responsible artificial intelligence systems ({EE-RAIS}) in disaster management: a conceptual model and its deployment},
+  author    = {Afroogh, Saleh and Mostafavi, Ali and Akbari, Ali and Pouresmaeil, Yasser and Goudarzi, Sajedeh and Hajhosseini, Faegheh and Rasoulkhani, Kambiz},
+  journal   = {AI and Ethics},
+  volume    = {4},
+  number    = {4},
+  pages     = {1117--1141},
+  year      = {2024},
+  doi       = {10.1007/s43681-023-00309-1}
+}</pre>
     </div>
   </div>
 
@@ -484,7 +518,17 @@ section,header{scroll-margin-top:76px}
       <div class="title">Tracing app technology: an ethical review in the COVID-19 era and directions for post-COVID-19</div>
       <div class="auth"><u>S. Afroogh</u>, A. Esmalian, A. Mostafavi, et al.</div>
       <div class="venue">Ethics and Information Technology, 2022</div>
-      <div class="plinks"><a href="https://link.springer.com/article/10.1007/s10676-022-09659-6" target="_blank" rel="noopener">paper</a></div>
+      <div class="plinks"><a href="https://link.springer.com/article/10.1007/s10676-022-09659-6" target="_blank" rel="noopener">paper</a><button class="cite" type="button" aria-expanded="false" title="Copy BibTeX">cite</button></div>
+      <pre class="bib" hidden>@article{afroogh2022tracing,
+  title     = {Tracing app technology: an ethical review in the {COVID-19} era and directions for post-{COVID-19}},
+  author    = {Afroogh, Saleh and Esmalian, Amir and Mostafavi, Ali and Akbari, Ali and Rasoulkhani, Kambiz and Esmaeili, Shahriar and Hajiramezanali, Ehsan},
+  journal   = {Ethics and Information Technology},
+  volume    = {24},
+  number    = {3},
+  pages     = {30},
+  year      = {2022},
+  doi       = {10.1007/s10676-022-09659-6}
+}</pre>
     </div>
   </div>
 
@@ -494,7 +538,17 @@ section,header{scroll-margin-top:76px}
       <div class="title">A probabilistic theory of trust concerning artificial intelligence: can intelligent robots trust humans?</div>
       <div class="auth"><u>S. Afroogh</u></div>
       <div class="venue">AI and Ethics, 2022</div>
-      <div class="plinks"><a href="https://doi.org/10.1007/s43681-022-00174-4" target="_blank" rel="noopener">paper</a></div>
+      <div class="plinks"><a href="https://doi.org/10.1007/s43681-022-00174-4" target="_blank" rel="noopener">paper</a><button class="cite" type="button" aria-expanded="false" title="Copy BibTeX">cite</button></div>
+      <pre class="bib" hidden>@article{afroogh2023probabilistic,
+  title     = {A probabilistic theory of trust concerning artificial intelligence: can intelligent robots trust humans?},
+  author    = {Afroogh, Saleh},
+  journal   = {AI and Ethics},
+  volume    = {3},
+  number    = {2},
+  pages     = {469--484},
+  year      = {2023},
+  doi       = {10.1007/s43681-022-00174-4}
+}</pre>
     </div>
   </div>
 
@@ -504,7 +558,17 @@ section,header{scroll-margin-top:76px}
       <div class="title">The Mirage of Motivation Reason Internalism</div>
       <div class="auth"><u>S. Afroogh</u></div>
       <div class="venue">The Journal of Value Inquiry, 2022</div>
-      <div class="plinks"><a href="https://doi.org/10.1007/s10790-021-09871-5" target="_blank" rel="noopener">paper</a></div>
+      <div class="plinks"><a href="https://doi.org/10.1007/s10790-021-09871-5" target="_blank" rel="noopener">paper</a><button class="cite" type="button" aria-expanded="false" title="Copy BibTeX">cite</button></div>
+      <pre class="bib" hidden>@article{afroogh2024mirage,
+  title     = {The mirage of motivation reason internalism},
+  author    = {Afroogh, Saleh},
+  journal   = {The Journal of Value Inquiry},
+  volume    = {58},
+  number    = {1},
+  pages     = {111--129},
+  year      = {2024},
+  doi       = {10.1007/s10790-021-09871-5}
+}</pre>
     </div>
   </div>
 
@@ -514,7 +578,16 @@ section,header{scroll-margin-top:76px}
       <div class="title">COVID-19, Scarce Resources and Priority Ethics: Why Should Maximizers Be More Conservative?</div>
       <div class="auth"><u>S. Afroogh</u>, A. Kazemi, A. Seyedkazemi</div>
       <div class="venue">Ethics, Medicine and Public Health, 2021</div>
-      <div class="plinks"><a href="https://www.sciencedirect.com/science/article/pii/S235255252100075X" target="_blank" rel="noopener">paper</a></div>
+      <div class="plinks"><a href="https://www.sciencedirect.com/science/article/pii/S235255252100075X" target="_blank" rel="noopener">paper</a><button class="cite" type="button" aria-expanded="false" title="Copy BibTeX">cite</button></div>
+      <pre class="bib" hidden>@article{afroogh2021covid,
+  title     = {{COVID-19}, scarce resources and priority ethics: why should maximizers be more conservative?},
+  author    = {Afroogh, Saleh and Kazemi, A. and Seyedkazemi, A.},
+  journal   = {Ethics, Medicine and Public Health},
+  volume    = {18},
+  pages     = {100698},
+  year      = {2021},
+  doi       = {10.1016/j.jemep.2021.100698}
+}</pre>
     </div>
   </div>
 
@@ -524,7 +597,17 @@ section,header{scroll-margin-top:76px}
       <div class="title">Empathic design in engineering education and practice: an approach for achieving inclusive and effective community resilience</div>
       <div class="auth"><u>S. Afroogh</u>, A. Esmalian, J. P. Donaldson, A. Mostafavi</div>
       <div class="venue">Sustainability, 2021</div>
-      <div class="plinks"><a href="https://doi.org/10.3390/su13074060" target="_blank" rel="noopener">paper</a></div>
+      <div class="plinks"><a href="https://doi.org/10.3390/su13074060" target="_blank" rel="noopener">paper</a><button class="cite" type="button" aria-expanded="false" title="Copy BibTeX">cite</button></div>
+      <pre class="bib" hidden>@article{afroogh2021empathic,
+  title     = {Empathic design in engineering education and practice: an approach for achieving inclusive and effective community resilience},
+  author    = {Afroogh, Saleh and Esmalian, Amir and Donaldson, Jonan Phillip and Mostafavi, Ali},
+  journal   = {Sustainability},
+  volume    = {13},
+  number    = {7},
+  pages     = {4060},
+  year      = {2021},
+  doi       = {10.3390/su13074060}
+}</pre>
     </div>
   </div>
 
@@ -594,6 +677,17 @@ function toggler(btnId, sel, more, less){
   b.addEventListener('click',function(){open=!open;document.querySelectorAll(sel).forEach(function(e){e.hidden=!open});b.textContent=open?less:more});
 }
 toggler('moreNews','.extra','Show older news','Show less');
+
+// Cite buttons: copy BibTeX and reveal it
+document.querySelectorAll('.plinks .cite').forEach(function(b){
+  b.addEventListener('click',function(){
+    var pre=b.closest('.pub').querySelector('.bib'), txt=pre.textContent;
+    pre.hidden=false; b.setAttribute('aria-expanded','true');
+    function done(){b.textContent='copied ✓';b.classList.add('ok');setTimeout(function(){b.textContent='cite';b.classList.remove('ok')},2000)}
+    function sel(){var r=document.createRange();r.selectNodeContents(pre);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+    try{navigator.clipboard.writeText(txt).then(done,sel)}catch(e){sel()}
+  });
+});
 
 // Top nav: theme toggle, mobile menu, scroll state, scroll-spy
 (function(){
