@@ -84,6 +84,15 @@ header{display:grid;grid-template-columns:230px 1fr;gap:40px;align-items:start}
 .tags span{font-size:.8rem;background:var(--soft);color:var(--muted);padding:3px 10px;border-radius:4px}
 .subh{font-family:var(--mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;margin:18px 0 10px}
 #talks .subh:first-of-type{margin-top:0}
+.collab{margin-top:40px;padding:18px 20px;border:1px solid var(--line);border-radius:10px;background:var(--soft)}
+.collab .ck{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.collab .crow{display:grid;grid-template-columns:90px 1fr;gap:12px;align-items:baseline;padding:4px 0}
+.collab .crow b{font-size:.82rem;font-weight:600;color:var(--muted)}
+.collab .cnames{display:flex;flex-wrap:wrap;gap:4px 0;min-width:0}
+.collab .cnames span{font-family:var(--display);font-weight:600;font-size:1rem;color:var(--fg)}
+.collab .cnames span:not(:last-child)::after{content:"·";margin:0 10px;color:var(--muted);font-weight:400}
+.collab .cnames .more{font-family:var(--body);font-weight:400;font-style:italic;color:var(--muted);font-size:.9rem}
+@media (max-width:640px){.collab .crow{grid-template-columns:1fr;gap:4px}}
 .empty{color:var(--muted);font-style:italic;margin:0}
 
 
@@ -214,6 +223,12 @@ footer .mail{font-family:var(--mono);user-select:all}
     <div class="tags"><span>Responsible AI</span><span>LLM Safety &amp; Red-Teaming</span><span>Explainable AI</span><span>AI Governance</span><span>Data Science</span><span>Reasoning + Interpretability</span><span>Machine Learning</span><span>AI Safety + AI Ethics</span><span>Health AI + HCI</span></div>
   </div>
 </header>
+
+<section id="collab" class="collab">
+  <div class="ck">Research collaborations with researchers from</div>
+  <div class="crow"><b>Industry</b><div class="cnames"><span>IBM Research</span><span>Google DeepMind</span><span>Microsoft Research</span><span>NVIDIA</span><span>Meta</span><span>Sony AI</span></div></div>
+  <div class="crow"><b>Academia</b><div class="cnames"><span>MIT</span><span>Stanford</span><span>Harvard</span><span>UC Berkeley</span><span>Carnegie Mellon</span><span>Yale</span><span>Cambridge</span><span>Imperial College London</span><span>UCL</span><span>UCLA</span><span>UC San Diego</span><span>USC</span><span>University of Toronto</span><span>University of Waterloo</span><span>NUS</span><span>Lawrence Berkeley National Lab</span><span class="more">and others</span></div></div>
+</section>
 
 <section id="news">
   <h2>News</h2>
