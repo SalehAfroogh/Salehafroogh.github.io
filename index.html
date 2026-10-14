@@ -169,6 +169,7 @@ svg .axis{stroke:var(--line)}
 .thumb{width:230px;max-width:100%;aspect-ratio:4/3;border-radius:6px;overflow:hidden;background:var(--soft);border:1px solid var(--line);display:grid;place-items:center;font-family:var(--mono);font-size:.75rem;color:var(--muted);text-align:center;padding:8px}
 .thumb img{width:100%;height:100%;object-fit:cover;display:block}
 .thumb.has-img{padding:0}
+.thumb.fit{background:#fff}.thumb.fit img{object-fit:contain;padding:6px}
 .pub > div{min-width:0}
 .pub .title{font-weight:600;line-height:1.4}
 .pub .auth{font-size:.9rem;color:var(--muted);margin-top:3px}
@@ -453,11 +454,68 @@ section,header{scroll-margin-top:76px}
 
 <section id="publications">
   <h2>Publication Highlights</h2>
+  <div class="pub">
+    <div class="thumb fit"><img src="images/projects/dvf-thumb2.jpg" alt=""></div>
+    <div>
+      <div class="title">Frictionless Validation: Exploring AI Sycophancy and Developmental Risks</div>
+      <div class="auth">J. Jiao, A. Murali, <u>S. Afroogh</u></div>
+      <div class="venue">Conference on AI, Ethics, and Society (AIES), 2026 <span class="badge">AAAI/ACM</span></div>
+      <div class="plinks"><a href="https://doi.org/10.1609/aies.v9i2.43234" target="_blank" rel="noopener">paper</a><a href="https://github.com/The-Responsible-AI-Initiative/dvf-sycophancy-eval" target="_blank" rel="noopener">code</a><a href="projects/ai-sycophancy-dvf.html">project</a><button class="cite" type="button" aria-expanded="false" title="Copy BibTeX">cite</button></div>
+      <pre class="bib" hidden>@inproceedings{jiao2026frictionless,
+  title     = {Frictionless Validation: Exploring {AI} Sycophancy and Developmental Risks},
+  author    = {Jiao, Junfeng and Murali, Abhejay and Afroogh, Saleh},
+  booktitle = {Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society},
+  volume    = {9},
+  number    = {2},
+  pages     = {1410--1420},
+  year      = {2026},
+  doi       = {10.1609/aies.v9i2.43234}
+}</pre>
+    </div>
+  </div>
+  <div class="pub">
+    <div class="thumb fit"><img src="images/projects/parental-pubthumb.jpg" alt=""></div>
+    <div>
+      <div class="title">Parental Notification Gaps in ChatGPT-5: An Empirical Study</div>
+      <div class="auth">K. Ersoz, <u>S. Afroogh</u>, D. Atkinson, J. Jiao</div>
+      <div class="venue">Conference on AI, Ethics, and Society (AIES), 2026 <span class="badge">AAAI/ACM</span></div>
+      <div class="plinks"><a href="https://doi.org/10.1609/aies.v9i2.43193" target="_blank" rel="noopener">paper</a><a href="https://github.com/The-Responsible-AI-Initiative/GPT-parental-controls-benchmark" target="_blank" rel="noopener">code</a><a href="projects/parental-notification-gaps.html">project</a><button class="cite" type="button" aria-expanded="false" title="Copy BibTeX">cite</button></div>
+      <pre class="bib" hidden>@inproceedings{ersoz2026parental,
+  title     = {Parental Notification Gaps in {ChatGPT-5}: An Empirical Study},
+  author    = {Ersoz, Kerem and Afroogh, Saleh and Atkinson, David and Jiao, Junfeng},
+  booktitle = {Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society},
+  volume    = {9},
+  number    = {2},
+  pages     = {902--910},
+  year      = {2026},
+  doi       = {10.1609/aies.v9i2.43193}
+}</pre>
+    </div>
+  </div>
+  <div class="pub">
+    <div class="thumb fit"><img src="images/projects/ethics-pubthumb.jpg" alt=""></div>
+    <div>
+      <div class="title">LLM ethics benchmark: a three-dimensional assessment system for evaluating moral reasoning in large language models</div>
+      <div class="auth">J. Jiao, <u>S. Afroogh</u>, A. Murali, K. Chen, D. Atkinson, A. Dhurandhar</div>
+      <div class="venue">Scientific Reports, 2025 <span class="badge">Nature</span></div>
+      <div class="plinks"><a href="https://www.nature.com/articles/s41598-025-18489-7" target="_blank" rel="noopener">paper</a><a href="https://github.com/The-Responsible-AI-Initiative/LLM_Ethics_Benchmark" target="_blank" rel="noopener">code</a><a href="projects/llm-ethics-benchmark.html">project</a><button class="cite" type="button" aria-expanded="false" title="Copy BibTeX">cite</button></div>
+      <pre class="bib" hidden>@article{jiao2025llmethics,
+  title     = {{LLM} ethics benchmark: a three-dimensional assessment system for evaluating moral reasoning in large language models},
+  author    = {Jiao, Junfeng and Afroogh, Saleh and Murali, Abhejay and Chen, Kevin and Atkinson, David and Dhurandhar, Amit},
+  journal   = {Scientific Reports},
+  volume    = {15},
+  pages     = {34642},
+  year      = {2025},
+  doi       = {10.1038/s41598-025-18489-7}
+}</pre>
+    </div>
+  </div>
 
   <div class="pub">
     <div class="thumb"><img src="images/projects/agga-thumb3.jpg" alt=""></div>
     <div>
       <div class="title">Global landscape of academic guidelines for generative AI and large language models</div>
+      <div class="auth">J. Jiao, <u>S. Afroogh</u>, K. Chen, D. Atkinson, A. Dhurandhar</div>
       <div class="venue">Nature Human Behaviour, 2025 <span class="badge">Nature</span></div>
       <div class="plinks"><a href="https://www.nature.com/articles/s41562-025-02124-6" target="_blank" rel="noopener">paper</a><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/XZZHA5" target="_blank" rel="noopener">dataset</a><button class="cite" type="button" aria-expanded="false" title="Copy BibTeX">cite</button></div>
       <pre class="bib" hidden>@article{jiao2025global,
