@@ -193,6 +193,8 @@ svg .axis{stroke:var(--line)}
 .card .cthumb{margin:-16px -18px 14px;aspect-ratio:16/9;background:#fff;border-bottom:1px solid var(--line);border-radius:8px 8px 0 0;overflow:hidden;display:grid;place-items:center}
 .card .cthumb img{width:100%;height:100%;object-fit:contain;padding:8px;display:block}
 .card .cthumb svg{width:100%;height:100%;display:block}
+.dslinks{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}
+.dslinks span{color:var(--muted);font-size:.85rem}
 .card .k{font-family:var(--mono);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .card h3{font-family:var(--display);font-size:1.05rem;margin:4px 0 6px}
 .card p{margin:0 0 8px;font-size:.92rem;color:var(--muted)}
@@ -350,6 +352,41 @@ section,header{scroll-margin-top:76px}
         <h3><a href="projects/parental-notification-gaps.html">Parental Notification Gaps in ChatGPT-5</a></h3>
         <p>Tests whether ChatGPT’s parental controls actually notify parents, and finds alerts are selective rather than comprehensive.</p>
         <div class="plinks2"><a href="projects/parental-notification-gaps.html">Project page →</a><a href="https://doi.org/10.1609/aies.v9i2.43193" target="_blank" rel="noopener">Paper</a><a href="https://github.com/The-Responsible-AI-Initiative/GPT-parental-controls-benchmark" target="_blank" rel="noopener">Code</a></div>
+      </div>
+    </article>
+    <article class="proj">
+      <a class="pthumb" href="https://huggingface.co/models?author=SalehAfroogh" target="_blank" rel="noopener" aria-label="Proof Systems and LLM Reasoning"><svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid meet" aria-hidden="true" font-family="IBM Plex Mono,monospace">
+<rect width="320" height="180" fill="var(--soft)"/>
+<g font-size="8.4" fill="var(--fg)">
+ <rect x="8" y="12" width="98" height="156" rx="6" fill="var(--bg)" stroke="var(--line)"/>
+ <text x="57" y="32" text-anchor="middle" font-size="8.6" font-weight="600" fill="var(--accent)">Suppes–Lemmon</text>
+ <text x="16" y="62">1</text><text x="34" y="62">(1) P→Q</text>
+ <text x="16" y="82">2</text><text x="34" y="82">(2) P</text>
+ <text x="16" y="102">1,2</text><text x="34" y="102">(3) Q</text>
+ <text x="57" y="130" text-anchor="middle" font-size="7.4" fill="var(--muted)">MP 1,2</text>
+ <rect x="111" y="12" width="98" height="156" rx="6" fill="var(--bg)" stroke="var(--line)"/>
+ <text x="160" y="32" text-anchor="middle" font-size="8.6" font-weight="600" fill="var(--accent)">Fitch</text>
+ <line x1="134" y1="50" x2="134" y2="110" stroke="var(--fg)"/>
+ <line x1="134" y1="67" x2="160" y2="67" stroke="var(--fg)"/>
+ <text x="120" y="62">1</text><text x="140" y="62">P→Q</text>
+ <line x1="145" y1="72" x2="145" y2="106" stroke="var(--fg)"/>
+ <line x1="145" y1="87" x2="160" y2="87" stroke="var(--fg)"/>
+ <text x="120" y="83">2</text><text x="151" y="83">P</text>
+ <text x="120" y="102">3</text><text x="151" y="102">Q</text>
+ <text x="160" y="130" text-anchor="middle" font-size="7.4" fill="var(--muted)">→E 1,2</text>
+ <rect x="214" y="12" width="98" height="156" rx="6" fill="var(--bg)" stroke="var(--line)"/>
+ <text x="263" y="32" text-anchor="middle" font-size="8.6" font-weight="600" fill="var(--accent)">Gentzen LK</text>
+ <text x="238" y="72" text-anchor="middle">P ⊢ P</text><text x="288" y="72" text-anchor="middle">Q ⊢ Q</text>
+ <line x1="222" y1="80" x2="304" y2="80" stroke="var(--fg)"/>
+ <text x="263" y="96" text-anchor="middle">P→Q, P ⊢ Q</text>
+ <text x="263" y="130" text-anchor="middle" font-size="7.4" fill="var(--muted)">→L</text>
+</g>
+</svg></a>
+      <div class="pbody">
+        <div class="pvenue">Ongoing · 2026</div>
+        <h3><a href="https://huggingface.co/models?author=SalehAfroogh" target="_blank" rel="noopener">Proof Systems and LLM Reasoning</a></h3>
+        <p>Fine-tunes Llama-3.1-8B on the same 110k logic problems written in three proof systems (Suppes–Lemmon, Fitch, Gentzen LK) to test how proof format shapes LLM reasoning.</p>
+        <div class="plinks2"><a href="https://huggingface.co/models?author=SalehAfroogh" target="_blank" rel="noopener">Models</a><a href="https://huggingface.co/datasets?author=SalehAfroogh" target="_blank" rel="noopener">Datasets</a></div>
       </div>
     </article>
     <article class="proj">
@@ -687,6 +724,33 @@ section,header{scroll-margin-top:76px}
   <h2>Datasets</h2>
   <div class="cards">
     <div class="card"><div class="cthumb"><svg viewBox="0 0 320 180" aria-hidden="true"><rect width="320" height="180" fill="var(--soft)"/><rect x="24" y="22" width="190" height="16" rx="4" fill="var(--bg)" stroke="var(--line)"/><rect x="32" y="27" width="80" height="6" rx="3" fill="var(--line)"/><circle cx="200" cy="30" r="4.5" fill="var(--c3)"/><rect x="24" y="45" width="190" height="16" rx="4" fill="var(--bg)" stroke="var(--line)"/><rect x="32" y="50" width="63" height="6" rx="3" fill="var(--line)"/><circle cx="200" cy="53" r="4.5" fill="var(--c2)"/><rect x="24" y="68" width="190" height="16" rx="4" fill="var(--bg)" stroke="var(--line)"/><rect x="32" y="73" width="111" height="6" rx="3" fill="var(--line)"/><circle cx="200" cy="76" r="4.5" fill="var(--c1)"/><rect x="24" y="91" width="190" height="16" rx="4" fill="var(--bg)" stroke="var(--line)"/><rect x="32" y="96" width="61" height="6" rx="3" fill="var(--line)"/><circle cx="200" cy="99" r="4.5" fill="var(--c0)"/><rect x="24" y="114" width="190" height="16" rx="4" fill="var(--bg)" stroke="var(--line)"/><rect x="32" y="119" width="52" height="6" rx="3" fill="var(--line)"/><circle cx="200" cy="122" r="4.5" fill="var(--c2)"/><rect x="24" y="137" width="190" height="16" rx="4" fill="var(--bg)" stroke="var(--line)"/><rect x="32" y="142" width="120" height="6" rx="3" fill="var(--line)"/><circle cx="200" cy="145" r="4.5" fill="var(--c3)"/><circle cx="252" cy="78" r="30" fill="none" stroke="var(--fg)" stroke-width="7" opacity=".85"/><line x1="273" y1="99" x2="298" y2="124" stroke="var(--fg)" stroke-width="9" stroke-linecap="round" opacity=".85"/><circle cx="252" cy="70" r="7" fill="var(--c1)"/><path d="M240 92 q12 -16 24 0" fill="var(--c1)"/></svg></div><div class="k">Dataset · 2026</div><h3>KidAID</h3><p>Real-world AI incidents involving children and adolescents, coded by sector, harm category, failure mode and severity.</p><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ZFAHMV" target="_blank" rel="noopener">Harvard Dataverse →</a></div>
+    <div class="card"><div class="cthumb"><svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" aria-hidden="true" font-family="IBM Plex Mono,monospace">
+<rect width="320" height="180" fill="var(--soft)"/>
+<g font-size="8.4" fill="var(--fg)">
+ <rect x="8" y="12" width="98" height="156" rx="6" fill="var(--bg)" stroke="var(--line)"/>
+ <text x="57" y="32" text-anchor="middle" font-size="8.6" font-weight="600" fill="var(--accent)">Suppes–Lemmon</text>
+ <text x="16" y="62">1</text><text x="34" y="62">(1) P→Q</text>
+ <text x="16" y="82">2</text><text x="34" y="82">(2) P</text>
+ <text x="16" y="102">1,2</text><text x="34" y="102">(3) Q</text>
+ <text x="57" y="130" text-anchor="middle" font-size="7.4" fill="var(--muted)">MP 1,2</text>
+ <rect x="111" y="12" width="98" height="156" rx="6" fill="var(--bg)" stroke="var(--line)"/>
+ <text x="160" y="32" text-anchor="middle" font-size="8.6" font-weight="600" fill="var(--accent)">Fitch</text>
+ <line x1="134" y1="50" x2="134" y2="110" stroke="var(--fg)"/>
+ <line x1="134" y1="67" x2="160" y2="67" stroke="var(--fg)"/>
+ <text x="120" y="62">1</text><text x="140" y="62">P→Q</text>
+ <line x1="145" y1="72" x2="145" y2="106" stroke="var(--fg)"/>
+ <line x1="145" y1="87" x2="160" y2="87" stroke="var(--fg)"/>
+ <text x="120" y="83">2</text><text x="151" y="83">P</text>
+ <text x="120" y="102">3</text><text x="151" y="102">Q</text>
+ <text x="160" y="130" text-anchor="middle" font-size="7.4" fill="var(--muted)">→E 1,2</text>
+ <rect x="214" y="12" width="98" height="156" rx="6" fill="var(--bg)" stroke="var(--line)"/>
+ <text x="263" y="32" text-anchor="middle" font-size="8.6" font-weight="600" fill="var(--accent)">Gentzen LK</text>
+ <text x="238" y="72" text-anchor="middle">P ⊢ P</text><text x="288" y="72" text-anchor="middle">Q ⊢ Q</text>
+ <line x1="222" y1="80" x2="304" y2="80" stroke="var(--fg)"/>
+ <text x="263" y="96" text-anchor="middle">P→Q, P ⊢ Q</text>
+ <text x="263" y="130" text-anchor="middle" font-size="7.4" fill="var(--muted)">→L</text>
+</g>
+</svg></div><div class="k">Dataset · 2026</div><h3>FLDx2 Proof-System Variants</h3><p>Three 110k-example versions of the FLDx2 logical-reasoning corpus, with proofs rewritten in Suppes–Lemmon, Fitch, and Gentzen LK styles.</p><div class="dslinks"><span>Hugging Face:</span><a href="https://huggingface.co/datasets/SalehAfroogh/FLDx2-SuppesLemmon" target="_blank" rel="noopener">Suppes–Lemmon</a><a href="https://huggingface.co/datasets/SalehAfroogh/FLDx2-Fitch" target="_blank" rel="noopener">Fitch</a><a href="https://huggingface.co/datasets/SalehAfroogh/FLDx2-GentzenLK" target="_blank" rel="noopener">Gentzen LK</a></div></div>
     <div class="card"><div class="cthumb"><img src="images/projects/ds-childsafe.jpg" alt="" loading="lazy"></div><div class="k">Dataset · 2025</div><h3>ChildSafeLLM</h3><p>200 child-safety evaluation prompts for two age groups, with harmful-response flags and 0–5 action labels for eight LLMs.</p><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MRZGNB" target="_blank" rel="noopener">Harvard Dataverse →</a></div>
     <div class="card"><div class="cthumb"><img src="images/projects/ds-agga.jpg" alt="" loading="lazy"></div><div class="k">Dataset · 2024</div><h3>AGGA</h3><p>Academic guidelines for generative AI, collected from universities worldwide.</p><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/XZZHA5" target="_blank" rel="noopener">Harvard Dataverse →</a></div>
     <div class="card"><div class="cthumb"><img src="images/projects/ds-igga.jpg" alt="" loading="lazy"></div><div class="k">Dataset · 2024</div><h3>IGGA</h3><p>Industry guidelines and policy statements for generative AI.</p><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/4LOXUW" target="_blank" rel="noopener">Harvard Dataverse →</a></div>
