@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Safe by Benchmark, Unsafe in Practice</title>
+<meta name="description" content="A child-centered taxonomy and 1,331 coded child-related AI incidents showing that most harms stem from deployment, governance and misuse rather than model defects.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="project.css">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:title" content="Safe by Benchmark, Unsafe in Practice · Saleh Afroogh">
+<meta property="og:description" content="A child-centered taxonomy and 1,331 coded child-related AI incidents showing that most harms stem from deployment, governance and misuse rather than model defects.">
+<meta property="og:image" content="https://salehafroogh.github.io/images/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="../index.html#projects">← Saleh Afroogh · Featured Projects</a>
+<div class="eyebrow">arXiv preprint · 2026</div>
+<h1>Safe by Benchmark, Unsafe in Practice</h1>
+<p class="sub">Lessons from 1,331 child-related AI incidents</p>
+<div class="authors">Junfeng Jiao, Kevin Chen, Shrestha Mishra, Abhejay Murali, David Atkinson, Shriti Raj, <u>Saleh Afroogh</u> (lead author)</div>
+<div class="btns"><a href="https://arxiv.org/abs/2610.34705" target="_blank" rel="noopener">Paper</a><a href="https://github.com/The-Responsible-AI-Initiative/KidAID" target="_blank" rel="noopener">Code</a><a href="https://doi.org/10.7910/DVN/ZFAHMV" target="_blank" rel="noopener">Data</a></div>
+<div class="stats"><div class="stat"><b>1,331</b><span>coded child-related AI incidents</span></div><div class="stat"><b>3</b><span>incident sources: OECD.AI, AIAAIC, AIID</span></div><div class="stat"><b>779</b><span>incidents tied to deployment &amp; organizational failures</span></div><div class="stat"><b>316</b><span>sexualization cases, the most common harm</span></div></div>
+<h2>Overview</h2>
+<p>Child safety in AI is usually judged at the model level, through benchmarks, red-teaming and content filters. This project asks what actually goes wrong once these systems reach children. We built <b>KidAID</b>, a corpus of 1,331 publicly reported incidents in which a minor experienced harm or a credible worst-case risk, drawn from the OECD.AI incident monitor, AIAAIC and the AI Incident Database. Each incident is coded with a child-specific <b>internal</b> (individual-level) harm, an <b>external</b> (population-level) harm, and the <b>sociotechnical failure mode</b> most directly implicated, using a new child-centered taxonomy.</p>
+<h2>Highlights</h2>
+<ul><li>Harms concentrate in representational, dignity-related and psychological categories, led by sexualization (316), sexual exploitation (131), addiction / compulsive use (79) and self-harm (69).</li><li>Most failures are <b>sociotechnical, not model defects</b>: deployment and organizational failures (779) and misuse (297) far outnumber technical model failures (196).</li><li>Harm to one child often spreads to the population level. AI-generated images of a single student, for example, can circulate through an entire school.</li><li>Reported incidents were flat through the mid-2010s, rose sharply around 2020 and accelerated after 2022, with contextual norms violation becoming the leading failure mode.</li><li>Model-level evaluations are necessary but cannot anticipate these pathways alone. The paper recommends age assurance, content verification, safety-by-design UX, incident disclosure norms and audits targeting developmental risk.</li></ul>
+<h2>Results</h2>
+<figure><div class="frame img"><img src="../images/projects/kidaid-trend.jpg" alt="Most prevalent failure modes per year, 2014–2026" loading="lazy"></div><figcaption>Most prevalent failure modes per year, 2014–2026 (2026 incomplete).</figcaption></figure>
+<figure><div class="frame img"><img src="../images/projects/kidaid-internal.jpg" alt="Taxonomy of internal generative AI harms ordered by prevalence" loading="lazy"></div><figcaption>Taxonomy of internal (individual-level) harms, ordered by prevalence.</figcaption></figure>
+<figure><div class="frame img"><img src="../images/projects/kidaid-failure.jpg" alt="Taxonomy of sociotechnical failure modes" loading="lazy"></div><figcaption>Taxonomy of sociotechnical failure modes; bar length indicates prevalence.</figcaption></figure>
+<figure><div class="frame img"><img src="../images/projects/kidaid-cooc.jpg" alt="Internal and external harm categories by primary failure mode" loading="lazy"></div><figcaption>Internal (a) and external (b) harm categories by primary failure mode.</figcaption></figure>
+<figure><div class="frame img"><img src="../images/projects/kidaid-sociotech.jpg" alt="Model-internal versus sociotechnical safety view" loading="lazy"></div><figcaption>Why benchmarks miss these harms: a model-internal view of safety versus a sociotechnical one.</figcaption></figure>
+<h2>Method</h2>
+<ul><li>Inclusion: AI is materially involved, at least one affected stakeholder is under 18, and the report supports coding a harm and a failure mode.</li><li>Dual-level harm coding links what happened to the child with the wider population-level harm.</li><li>Codebook developed iteratively; reliability checked on 150 double-coded incidents (Krippendorff's α = 0.73 for harm categories, 0.67 for failure modes).</li><li>Findings are descriptive counts of reported incidents, not causal estimates.</li></ul>
+<h2>Resources</h2>
+<div class="res"><a href="https://arxiv.org/abs/2610.34705" target="_blank" rel="noopener">Paper (arXiv)<span>arXiv ↗</span></a><a href="https://github.com/The-Responsible-AI-Initiative/KidAID" target="_blank" rel="noopener">Codebook &amp; annotations<span>GitHub ↗</span></a><a href="https://doi.org/10.7910/DVN/ZFAHMV" target="_blank" rel="noopener">KidAID dataset<span>Dataverse ↗</span></a></div>
+<h2>Citation</h2><p class="cite">Jiao, J., Chen, K., Mishra, S., Murali, A., Atkinson, D., Raj, S., &amp; Afroogh, S. (2026). Safe by benchmark, unsafe in practice: Lessons from 1331 child-related AI incidents. <i>arXiv preprint arXiv:2610.34705</i>.</p>
+<footer><a href="../index.html">← Back to main page</a><span>© 2026 Saleh Afroogh</span></footer>
+</div>
+</body>
+</html>
